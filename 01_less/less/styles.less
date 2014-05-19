@@ -1,0 +1,18 @@
+@import "colors";
+@import "layout";
+@import "mixins";
+@import "typo";
+
+body{
+  background: @color_gray;
+}
+
+img{
+  opacity: 0.7;
+  .transition(opacity);
+
+  &:hover{
+    opacity: 1;
+  }
+}
+
