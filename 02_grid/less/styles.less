@@ -1,0 +1,31 @@
+// Include bootstrap
+
+@import "bootstrap/mixins";
+@import "bootstrap/variables";
+@import "bootstrap/grid";
+@import "bootstrap/scaffolding";
+
+// Include custom files
+
+@import "colors";
+@import "layout";
+@import "mixins";
+@import "typo";
+
+body{
+  background: @color_gray;
+}
+
+img{
+  opacity: 0.7;
+  .transition(opacity);
+  margin-bottom: 15px;
+  width: 100%;
+  height: auto;
+
+  &:hover{
+    opacity: 1;
+  }
+}
+
+
